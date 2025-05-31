@@ -1,0 +1,313 @@
+body{
+                font-family: verdana, arial, helvetica, sans-serif;
+                font-size:9pt;
+            }
+            .heada {COLOR: #003366;font-size:16pt;}
+            .headb {COLOR: #003366;font-size:12pt;font-weight:bold;}
+            .headc {COLOR: #003366;font-size:11pt;font-weight:bold;}
+
+            .right {
+                float:right;
+            }
+            .left {
+                float:left;
+            }
+            .fett {
+                font-weight:bold;
+            }
+            .small {
+                font-size:8pt;
+            }
+            .center {
+                text-align: center;
+            }
+            .barcode {
+                height:50px;
+                width:100px;
+                border:0;
+            }
+
+            .bsgirocode {
+                height:100px;
+                width:100px;
+                border:1px solid #000;
+                float: right;
+                text-align: center;
+                border-radius: 5px;
+                padding:1px;
+            }
+            .bsgirocode img {
+                height:100%;
+                width:100%;
+            }
+            .bsgirocode span {
+                position: relative;
+                top: -10px;
+                display: inline-block;
+                background: #fff;
+                padding: 0 3px;
+                font-size: 12px;
+                font-style:normal;
+                font-family: monospace;
+            }
+
+            .page {
+                width:190mm;
+                margin: 1px auto 0;
+                overflow:hidden;
+                page-break-inside:avoid;
+                padding-bottom:20px;
+            }
+            #page2 {
+                border-top:1px solid black;
+                page-break-before: always;
+            }
+
+            .head {
+                clear:both;
+                overflow:hidden;
+
+            }
+            .content {
+                padding:20px 0;
+                display:block;
+                clear:both;
+            }
+            .foot {
+                clear:both;
+            }
+            .h1 {
+                margin:10px 10px 10px 0;
+                font-size:17px;
+                font-weight:bold;
+            }
+
+            .ktable {
+                border:0;
+                margin-top: 10px;
+            }
+            .ktable .space {
+                height:4px;
+            }
+            .ktable td {
+                vertical-align: top;
+            }
+            .sp1 {
+                width:80px;
+            }
+            .sp2 {
+                white-space: nowrap;
+            }
+            .sp3 {
+                padding-left:10px;
+            }
+            .kname {
+                font-size:11pt;
+                font-style:italic;
+                font-weight:bold;
+            }
+            .topspace {
+                margin-top:6px;
+            }
+            .zahlung {
+                font-size:10pt;
+                font-style:italic;
+                text-align: center;
+
+                border:1px solid black;
+                padding:20px;
+                margin:10px 0;
+            }
+            .zahlung td {
+            text-align: left;
+            }
+            .zahlung td.right {
+            text-align: right;
+            }
+            .entext {
+                font-size: 7pt;
+                color:#999999;
+            }
+
+            .tnticket {
+                overflow: hidden;
+                width:85mm;
+                height:53mm;
+                border:1px solid #000;
+            }
+            .tickethead {
+                clear:both;
+                overflow:hidden;
+                margin:10px 10px 0;
+            }
+            .tnticket .ktable {
+                margin:10px 10px 0;
+            }
+            .bemerkung {
+                float: left;
+                padding: 0 10px;
+                width: 90mm;
+            }
+            .bemerkung.full {
+                float: none;
+                padding: 0 10px;
+                width: auto;
+            }
+            .agname {
+                display: block;
+                max-height: 45px;
+                overflow: hidden;
+                -ms-hyphens: auto;
+                -webkit-hyphens: auto;
+                hyphens: auto;	
+            }
+            .fitnesscard .headb {
+                margin-top: 5px;
+            }
+            .mandat {
+                margin-left:1cm;
+                margin-right:1cm;
+            }
+            .adrfeld {
+                margin-bottom: 10px;
+                height: 4cm;
+                width: 8cm;
+                font-size:12pt;
+            }
+            .date {
+                clear:right;
+                margin-top:50px;
+            }
+            .nowrap {
+                white-space: nowrap;
+            }
+            .adrabs {
+                font-size:7pt;
+                border-bottom: 1px solid #000;
+                margin-bottom: 5px
+            }
+            .mandat .headc {
+                margin:10px 0 20px 0;
+            }
+            .mandat .ktable {
+                margin-top:20px;
+                width:100%;
+                box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+            }
+            .mandat .ktable td {
+                width:auto;
+                padding: 12px 20px 3px 0;
+            }
+            .mandat .ktable td.line {
+                margin-top:2cm;
+                padding-top:1px;
+                border-top:1px solid #000;
+            }
+            .mandat .ktable td.sp2 {
+                padding-left:10px;
+                padding-bottom:1px;
+            }
+            .mandat .ktable td.sp2.kline {
+                border-bottom:1px solid #000;
+            }
+            .mandat .ktable td.sp1 {
+                width: 295px;
+            }
+            .agb_small {
+                font-size:7pt;
+            }
+
+            .lang_en {
+                font-size:80%;
+            }
+
+            .mticket {
+                width:auto;
+                border:0;
+
+                margin:0;
+                padding:3px;
+                -moz-box-shadow: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                font-size:120%;
+                text-align: center;
+            }
+            .mticket .tickethead {
+                margin:10px 0 10px 0;
+            }
+            .mticket .headb {
+                font-size: 150%;
+                text-align:center;
+                display: block;
+            }
+            .mticket td {
+                font-size:120%;
+            }
+            .mticket td.sp1 {
+                font-size:80%;
+                width: 60px;
+                vertical-align: middle;
+            }
+            .mticket .agname {
+                text-overflow: ellipsis;
+            }
+            .mticket .headb {
+                margin: 10px 5px 5px 5px;
+            }
+            .mobilecode {
+                margin: 10px auto 10px auto;	
+                display: block;
+                width: 80%;
+                min-width:30mm;
+                max-width:50mm;
+                height: 60px;
+            }
+            .unihead {
+                background: linear-gradient(#555555, #333333) repeat scroll 0 0 #333333;
+                border: 1px solid #222222;
+                color: #ffffff;
+                display: block;
+                font-size: 120%;
+                font-weight: bold;
+                padding: 10px 20px;	
+            }
+            .unihead2 {
+                margin:20px 0 2px 0;
+                background-color: #dddddd;
+                font-size: 80%;
+                padding: 2px 20px;	
+            }
+
+            .tnname {
+                padding-top:10px;
+            }
+            .qrcode {
+                width:40%;
+                min-width:20mm;
+                max-width:50mm;
+                height:auto;
+                border:0;
+                margin:-10px -10px 0 0;
+            }
+
+
+            @media print {
+                .page {
+                    height:280mm;
+                    padding:0;
+                    margin:0;
+                }
+                #page2 {
+                    border:0;
+                }
+                .mandat {
+                    padding-top: 35mm;
+                }
+            }
+            body.mt .mticket {
+                display:block;
+            }
