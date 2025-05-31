@@ -26,7 +26,7 @@ function Generate() {
             <div>S-EAH | 50934-00${rand}</div>
             <div class="unihead2">Angebot</div>
             <div class="heada">Streetballanlage (Vermietung) </div>
-            <div class="unihead2">gültig</div>${weekdayNames[weekday]}&nbsp;${timeSlot}<div>20.04.2025</div>
+            <div class="unihead2">gültig</div>${weekdayNames[weekday]}&nbsp;${timeSlot}<div>${dayjs(dateVal).format('DD.MM.YYYY')}</div>
             <div class="unihead2">&nbsp;</div>
         </div>
     `);
