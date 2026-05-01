@@ -1,13 +1,14 @@
 function Generate() {
-    var name = document.getElementById("name").value;
-    var dateVal = new Date(document.getElementById("dateVal").value);
-    var timeSlot = document.getElementById("interval").value; 
-    var rand = Math.floor(Math.random() * 6) + 1;
-    var weekday = dateVal.getDay();
-    var weekdayNames = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
+  var name = document.getElementById("name").value;
+  var dateVal = new Date(document.getElementById("dateVal").value);
+  var timeSlot = document.getElementById("interval").value;
+  var affiliation = document.getElementById("affiliation").value;
+  var rand = Math.floor(Math.random() * 6) + 1;
+  var weekday = dateVal.getDay();
+  var weekdayNames = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
 
-    const newWindow = window.open();
-    newWindow.document.write(`
+  const newWindow = window.open();
+  newWindow.document.write(`
         <!DOCTYPE html>
         <html lang="de">
         <head>
@@ -23,12 +24,12 @@ function Generate() {
                 alt="MobilCode">
             <div class="unihead2">Teilnehmer*in</div>
             <div class="headb">${name}</div>
-            <div>S-EAH | 50934-00${rand}</div>
+            <div>${affiliation} | 50934-00${rand}</div>
             <div class="unihead2">Angebot</div>
             <div class="heada">Streetballanlage (Vermietung) </div>
-            <div class="unihead2">gültig</div>${weekdayNames[weekday]}&nbsp;${timeSlot}<div>${dayjs(dateVal).format('DD.MM.YYYY')}</div>
+            <div class="unihead2">gültig</div>${weekdayNames[weekday]}&nbsp;${timeSlot}<div>${dayjs(dateVal).format("DD.MM.YYYY")}</div>
             <div class="unihead2">&nbsp;</div>
         </div>
     `);
-    newWindow.document.close();
+  newWindow.document.close();
 }
